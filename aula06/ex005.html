@@ -17,19 +17,40 @@
 
 <body>
     <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resultado</p>
+    <p >Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
-    <div>Clique em mim</div>
+    <div  id="msg" name="msg2" class="msg3">Clique em mim</div>
     <script>
         // Acessando Documento pelo DOM
         window.document.write(window.document.URL)
+        var corpo = window.document.body;
+        // Acessando Elementos do DOM e manipulando!
+        var p1 = window.document.getElementsByTagName("P")[0]
+        window.document.writeln ("<br> Está escrito assim " + p1.innerText) // Não considera css
+        corpo.style.background = "black";
+        p1.style.color = "blue";
+        var p2 = window.document.getElementsByTagName("P")[1]
+        window.document.writeln ("<br> Está escrito assim " + p2.innerHTML) // Considera CSS
+       
+        // Acessando por ID //
+        var d = document.getElementById("msg");
+        d.style.background = "green";
+        d.innerText = "Estou aguardando";
 
+        // Acessando por Name //
+        var d2 = document.getElementsByName("msg2")[0];
+        d2.innerText = "Olá"
+        
+        
+        // Acessando por Classe //
+        var d3 = document.getElementsByClassName("msg3")[0];
+        d3.innerText = "Olá , Mundo"
 
+        // Usando query Selector //
 
+        var d5 = window.document.querySelector("div#msg");
+        d5.style.background = "blue";
 
-
-        var p1 = window.document.getElementsByTagName("p")[0]
-        window.document.write(p1.innerText)
     </script>
 </body>
 
