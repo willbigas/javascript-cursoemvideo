@@ -2,29 +2,40 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curso do Curso em Video</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso do Curso em Video</title>
 </head>
 
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Já me livrei da maldição.</p>
-    <script>
-      // Convertendo entradas strings para tipos de variaveis 
-      var n1 = Number.parseInt(window.prompt('Digite um numero')) // converte a entrada pra inteiro
-      var n2 = Number.parseFloat(window.prompt('Digite Outro numero')) // converte a entrada pra decimal
-      var n3 = Number(window.prompt('Digite Outro numero')) // coverte qualquer coisa para numero
+  <h1>Olá, Mundo!</h1>
+  <p>Já me livrei da maldição.</p>
+  <script>
+    // Convertendo entradas strings para tipos de variaveis 
+    var n1 = Number.parseInt(window.prompt('Digite um numero')) // converte a entrada pra inteiro
+    var n2 = Number.parseFloat(window.prompt('Digite Outro numero')) // converte a entrada pra decimal
+    var n3 = Number(window.prompt('Digite Outro numero')) // coverte qualquer coisa para numero
 
-      // Convertendo Numeros para Strings
-      var numero2 = 2; // declarando inteiro
-      String(numero2); // transforma em String
-      numero2.toString // converte em string tbm
-      
-      var soma = n1 + n2 + n3;
-      window.alert('A soma dos valores é :' + soma)
-    </script>
+    // Convertendo Numeros para Strings
+    var numero2 = 2; // declarando inteiro
+    String(numero2); // transforma em String
+    numero2.toString // converte em string tbm
+
+    var soma = n1 + n2 + n3;
+    window.alert('A soma dos valores é :' + soma)
+
+    var s = "Javascript";
+
+    /**
+    Concatenação Padrão
+    **/
+    var concatenado = "O aluno aprendeu " + s; // Concatenação padrão 
+    var concatenadoComPlaceHolder = `O Aluno aprendeu ${s}`; // Atenção ! usar crase inversa nas Strings...
+    window.alert(concatenadoComPlaceHolder);
+
+
+  </script>
 </body>
 
 </html>
