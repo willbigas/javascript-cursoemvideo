@@ -13,3 +13,5 @@ for (let index = 0; index < num.length; index++) {
 }
 
 console.log(`A posição do valor 8 é ${posicao}`)
+
+
